@@ -29,7 +29,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-xl font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           <Link to="/jobs" className="flex items-center space-x-1 transition-colors hover:text-foreground/80 text-foreground">
             <Search className="h-4 w-4" />
             <span>Browse Jobs</span>
@@ -47,7 +47,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "dark")}
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             >
               <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
