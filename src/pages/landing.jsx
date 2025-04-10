@@ -10,7 +10,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
 import { StarIcon, UserCircle } from "lucide-react";
-import { LogoRow } from "@/components/logo-row";
+import { LogoRow } from "../components/logo-row";
 
 const testimonials = [
   {
@@ -42,9 +42,9 @@ const testimonials = [
 
 const LandingPage = () => {
   return (
-    <main className="flex flex-col gap-8 sm:gap-16 lg:gap-20 py-8 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <main className="flex flex-col gap-8 sm:gap-16 lg:gap-20">
       {/* Hero Section */}
-      <section className="text-center max-w-4xl mx-auto">
+      <section className="text-center max-w-4xl mx-auto pt-8 sm:pt-16 lg:pt-20 px-4 sm:px-6 lg:px-8">
         <h1 className="flex flex-col items-center justify-center font-extrabold text-3xl sm:text-5xl lg:text-7xl xl:text-8xl tracking-tighter py-4">
           <span className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 text-transparent bg-clip-text">
             Track Your Job Applications
@@ -61,11 +61,8 @@ const LandingPage = () => {
         </p>
       </section>
 
-      {/* Logo Row */}
-      <LogoRow />
-
       {/* CTA Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4 sm:px-6 lg:px-8">
         <Link to={"/jobs"} className="w-full sm:w-auto">
           <Button variant="blue" size="xl" className="w-full sm:w-auto">
             Browse Jobs
@@ -78,8 +75,11 @@ const LandingPage = () => {
         </Link>
       </div>
 
+      {/* Logo Row */}
+      <LogoRow />
+
       {/* Features Section */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto w-full">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <Card className="p-4 sm:p-6">
           <CardContent className="flex flex-col items-center text-center">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mb-4">
@@ -116,7 +116,7 @@ const LandingPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-8 sm:py-12">
+      <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-900 dark:text-gray-100">
           Success Stories
         </h2>
